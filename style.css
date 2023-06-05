@@ -1,0 +1,502 @@
+html { 
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    text-overflow: ellipsis;
+    cursor: default;
+    }
+    ::selection {
+        color: #fff;
+        background-color: #000; 
+     }
+    *, *:before, *:after {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+      }
+
+.page {
+    width: 100%;
+    min-width: 1400px;
+    position: relative;
+}
+
+.navmain {
+position: fixed;
+right: 20px;
+top: 10vw;
+display: flex;
+flex-direction: column;
+height: 500px;
+justify-content: space-around;
+width: auto;
+z-index: 1000;
+}
+.navmain .navelement {
+border-radius: 50%;
+background-color: white;
+height: 40px;
+width: 40px;
+border: 2px solid black;
+cursor: pointer;
+transition: .3s;
+position: relative;
+}
+.navmain .navelement a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    font-family: 'Marck Script', cursive;
+    }
+.navmain .navelement:hover {
+background-color: rgb(236, 236, 236);
+}
+header {
+    top: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 4px solid black;
+    background-color: white;  
+    position: fixed;   
+    z-index: 100;  
+    width: 100%;  
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.618);
+    min-width: 1400px;
+    z-index: 98;
+}
+.headerflex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 3px;
+    justify-content: space-between;
+}
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.capylogotext {
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 800;
+    text-align: center;
+}
+.capylogo {
+    width: 80px;
+    height: 40px;
+    background-image: url("capylogo.jpg");
+}
+.titleh2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-left: -150px;
+}
+.titleh3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    margin-left: 10px;
+    letter-spacing: 3px;  
+}
+.menutext {
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 800;
+    text-align: center;
+    top: 10px;
+    margin-right: 45px;
+    color: white;
+    user-select: none;
+}
+
+.intro {
+    background-size: 100%;
+    background-image: url("assets/prot3.png");
+    margin-top: 70px;
+    object-fit: contain;
+    padding-top: 56.25%;
+    aspect-ratio: 16 / 9;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid black;
+    position: relative;
+}
+.introtext {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    bottom: 5px;
+    font-family: 'Marck Script', cursive;
+    margin-left: 10px;
+}
+.contentpart {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.contentpart h3 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    width: 100%;
+    height: auto;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    background-color: rgb(236, 236, 236);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    transition: all .5;
+}
+h3:hover {
+    font-weight: 200;
+}
+.contentinnerpart {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+}
+.contentinnerpart .firstpart {
+    text-align: center;
+    font-family: 'Geologica', sans-serif;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: 200;
+    position: relative;;
+    padding: 5px;
+    margin: 0 auto;
+}
+.colba:after {
+    content: '';
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    top: 8px;
+    right: -10px;
+    position: relative;
+    transform: rotate(20deg);
+    background-image: url("assets/col.svg");
+    background-size: cover;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+}
+.contentpart p {
+    text-align: center;
+}
+.team {
+    margin-top: 20px;
+}
+.teammate {
+    position: relative;
+    box-sizing: border-box;
+    width: auto;
+}
+.teammate:before {
+    content: '';
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    left: -5px;
+    bottom: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: rgb(236, 236, 236);
+}
+.teammate a {
+    font-family: 'Marck Script', cursive;
+    font-size: 35px;
+    font-weight: 200;
+}
+.teammate a:hover {
+    font-weight: 800;
+}
+
+.solopictplace {
+    margin-top: 30px;
+width: 100%;
+height: auto;
+background-color: rgb(236, 236, 236);
+}
+
+.solopict1 {
+background-image: url("assets/teacher.jpg");
+height: 300px;
+width: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+border: 2px solid black;
+}
+.solopict2 {
+    background-image: url("assets/prot1.gif");
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+    .solopict2:after {
+        content: 'Зовнішній вигляд концепту';
+        position: absolute;
+        bottom: -60px;
+        color: black;
+        left: 150px;
+        font-size: 30px;
+        font-family: 'Marck Script', cursive;
+        text-decoration: underline;
+        padding: 5px;
+        background-color: rgb(236, 236, 236);
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    .solopictplacegif {
+        margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+position: relative;
+    }
+    .solopict31 {
+        background-image: url("assets/1.gif");
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+        border: 2px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        transform-origin: center;
+        }
+     .solopict32 {
+            background-image: url("assets/2.gif");
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            border: 2px solid black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            transform-origin: center;
+            }
+             .solopict33 {
+        background-image: url("assets/3.gif");
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+        border: 2px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        transform-origin: center;
+             }
+
+.pictholder {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: auto;
+    justify-content: center;
+}
+.pictholderinner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: auto;
+}
+.pictholder .pictpad {
+margin: 50px;
+padding: 40px;
+background-color: rgb(236, 236, 236);
+border-radius: 50%;
+}
+.pictholder .pict1 {
+    background-image: url("assets/for.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict2 {
+    background-image: url("assets/per1.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict3 {
+    background-image: url("assets/per3.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict4 {
+    background-image: url("assets/bot.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict5 {
+    background-image: url("assets/beh.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict6 {
+    background-image: url("assets/lef.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict7 {
+    background-image: url("assets/rig.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict8 {
+    background-image: url("assets/per2.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.pictholder .pict9 {
+    background-image: url("assets/top.png");
+height: 500px;
+width: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+}
+.solopictplace .solopict4 {
+    background-image: url("assets/4.jpg");
+    height: 500px;
+    width: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.solopictplace .solopict5 {
+    background-image: url("assets/sh.jpg");
+    height: 500px;
+    width: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+.download {
+    color: white;
+    background-color: black;
+    margin: 50px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid black;
+    display: inline-block;
+    max-width: 600px;
+}
+.download:hover {
+    color: black;
+    background-color: white;
+    margin: 50px;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid black;
+}
+.solopict6 {
+    background-image: url("assets/6.png");
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    bottom: 0;
+    margin-top: 30px;
+    left: 0;
+    padding: 30px;
+    color: black;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+
+}
